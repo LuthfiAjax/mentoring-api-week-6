@@ -1,0 +1,15 @@
+{
+  "name": "appointment-api",
+  "version": "1.0.0",
+  "description": "node api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luthfi imron",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  }
+}

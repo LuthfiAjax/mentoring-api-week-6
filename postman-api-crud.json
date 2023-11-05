@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "e4015cad-fdf2-45ef-a7e8-81740ca00e1f",
+		"name": "coding-studio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26952945"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Luthi 1\",\n    \"date\":\"05 11 2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/appointments/360fc98d-d2f0-4ab2-a5f0-237f26a31d49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"appointments",
+						"360fc98d-d2f0-4ab2-a5f0-237f26a31d49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Luthfi Juhari\",\n  \"date\": \"2023-11-09\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/appointments/ea807ddd-54cb-42fa-824d-27402fd87447",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"appointments",
+						"ea807ddd-54cb-42fa-824d-27402fd87447"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/appointments/8c41e3ab-3c48-4b42-9413-f76c126c7df2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"appointments",
+						"8c41e3ab-3c48-4b42-9413-f76c126c7df2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"appointments\": [\n    {\n      \"name\": \"Agus Setiawan\",\n      \"date\": \"2023-11-08\"\n    },\n    {\n      \"name\": \"Budi Santoso\",\n      \"date\": \"2023-11-09\"\n    },\n    {\n      \"name\": \"Citra Wijaya\",\n      \"date\": \"2023-11-10\"\n    },\n    {\n      \"name\": \"Dewi Susanto\",\n      \"date\": \"2023-11-11\"\n    },\n    {\n      \"name\": \"Eko Prabowo\",\n      \"date\": \"2023-11-12\"\n    },\n    {\n      \"name\": \"Fajar Purnama\",\n      \"date\": \"2023-11-13\"\n    },\n    {\n      \"name\": \"Galih Wibowo\",\n      \"date\": \"2023-11-14\"\n    },\n    {\n      \"name\": \"Hesti Sari\",\n      \"date\": \"2023-11-15\"\n    },\n    {\n      \"name\": \"Iwan Setiawan\",\n      \"date\": \"2023-11-16\"\n    },\n    {\n      \"name\": \"Joko Pratama\",\n      \"date\": \"2023-11-17\"\n    },\n    {\n      \"name\": \"Kartika Putri\",\n      \"date\": \"2023-11-18\"\n    },\n    {\n      \"name\": \"Linda Wijaya\",\n      \"date\": \"2023-11-19\"\n    },\n    {\n      \"name\": \"Mega Puspita\",\n      \"date\": \"2023-11-20\"\n    },\n    {\n      \"name\": \"Nina Rahayu\",\n      \"date\": \"2023-11-21\"\n    },\n    {\n      \"name\": \"Oscar Saputra\",\n      \"date\": \"2023-11-22\"\n    },\n    {\n      \"name\": \"Putri Permatasari\",\n      \"date\": \"2023-11-23\"\n    },\n    {\n      \"name\": \"Rudi Kusuma\",\n      \"date\": \"2023-11-24\"\n    },\n    {\n      \"name\": \"Sari Lestari\",\n      \"date\": \"2023-11-25\"\n    },\n    {\n      \"name\": \"Teguh Purnomo\",\n      \"date\": \"2023-11-26\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bulk-appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bulk-appointments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
